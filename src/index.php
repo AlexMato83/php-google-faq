@@ -3,9 +3,38 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="app.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <title></title>
   </head>
   <body>
+    <header>
+      <div class="logo">
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_74x24dp.png" alt="">
+        <h2>Privacy e termini</h2>
+      </div>
+      <div class="selections">
+       <div class="selections_left">
+         <div class="selections_left_child">
+           <a href="#">Indtroduzione</a>
+         </div>
+         <div class="selections_left_child">
+           <a href="#">Norme sulla privacy</a>
+         </div>
+         <div class="selections_left_child">
+           <a href="#">Termini di servizio</a>
+         </div>
+         <div class="selections_left_child">
+           <a href="#">Tecnologie</a>
+         </div>
+         <div class="selections_left_child">
+           <a href="#">Domande frequenti</a>
+         </div>
+       </div>
+       <div class="selections_right">
+           <a href="#">Account Google</a>
+       </div>
+      </div>
+    </header>
    <?php
    $faq = [
      ["question" => "Come state implementando la recente decisione della Corte di giustizia dell'Unione europea (CGUE) relativa al diritto all'oblio?",
@@ -41,10 +70,12 @@
 
    ];
     ?>
+    <main>
+      <?php foreach ($faq as $questAnswer){ ?>
+      <div><?php echo $questAnswer["question"]; ?></div><div><?php echo $questAnswer["answer"]; ?></div>
+      <?php } ?>
+    </main>
 
-    <?php foreach ($faq as $questAnswer){ ?>
-    <div><?php echo $questAnswer["question"]; ?></div><div><?php echo $questAnswer["answer"]; ?></div>
-    <?php } ?>
 
   <script src="app.js"></script>
   </body>
