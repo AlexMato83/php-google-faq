@@ -44,6 +44,20 @@ header {
   text-decoration: none;
 }
 
+.selections_left_child {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.selections_left_child:nth-child(5) {
+  border-bottom: 3px solid #3367d6;
+}
+
+.selections_left_child:nth-child(5) a {
+  color: #3367d6;
+}
+
 .selections_left {
   display: flex;
   justify-content: inherit;
@@ -64,10 +78,22 @@ main > div {
   margin: 50px 0;
 }
 
-main > div:nth-child(1),
-main > div:nth-child(3),
-main > div:nth-child(5),
-main > div:nth-child(7) {
-  background: red;
+main > div > h2 {
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+main > div span {
+  line-height: 2;
+  font-weight: 100;
+}
+
+main > div span p {
+  margin-bottom: 30px;
+}
+
+main > div span a {
+  color: #3367d6;
+  text-decoration: none;
 }
 
